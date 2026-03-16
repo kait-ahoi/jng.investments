@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JNG Investments OÜ — Baltikumi Haldusettevõte</title>
+  <meta name="description" content="JNG Investments OÜ on Baltikumis tegutsev holdingettevõte, mis omab müügi-, distributsiooni- ja logistikaettevõtteid kogu piirkonnas.">
+  <meta property="og:title" content="JNG Investments OÜ">
+  <meta property="og:description" content="Baltic holding company with subsidiaries in sales, distribution and logistics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jng.investments">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="nav-brand">
+      <img src="JNG_logo.webp" alt="JNG" class="nav-logo">
+      <span class="nav-name">JNG Investments <span class="nav-entity">OÜ</span></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link" data-key="nav_about" data-section="about">Meist</a>
+      <a href="#portfolio" class="nav-link" data-key="nav_portfolio" data-section="portfolio">Ettevõtted</a>
+      <a href="#values" class="nav-link" data-key="nav_values" data-section="values">Väärtused</a>
+      <a href="#contact" class="nav-link" data-key="nav_contact" data-section="contact">Kontakt</a>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="et" onclick="setLang('et')">ET</button>
+      <button class="lang-btn" data-lang="lv" onclick="setLang('lv')">LV</button>
+      <button class="lang-btn" data-lang="lt" onclick="setLang('lt')">LT</button>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menüü">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="nav-link" data-key="nav_about" data-section="about" onclick="toggleMenu()">Meist</a>
+    <a href="#portfolio" class="nav-link" data-key="nav_portfolio" data-section="portfolio" onclick="toggleMenu()">Ettevõtted</a>
+    <a href="#values" class="nav-link" data-key="nav_values" data-section="values" onclick="toggleMenu()">Väärtused</a>
+    <a href="#contact" class="nav-link" data-key="nav_contact" data-section="contact" onclick="toggleMenu()">Kontakt</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════════════
+     ██████  EESTI / ESTONIAN  ██████
+════════════════════════════════════════════════════════ -->
+<div class="lang-content" data-lang="et">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">Baltikumi müügi-, distributsiooni- ja logistikaspetsialist alates 1991. aastast</span>
+        <h1 class="hero-title">Investeerime<br><em>Baltikumi</em><br>tulevikku</h1>
+        <p class="hero-sub">Baltikumi müügi-, distributsiooni- ja logistikaettevõtteid ühendav haldusettevõte. Üle kolme aastakümne kogemust, tugevad juured, kindel suund.</p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary">Meie ettevõtted</a>
+          <a href="#about" class="btn btn-outline">Tutvuge meiega</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo-wrap">
+          <img src="JNG_logo.webp" alt="JNG Investments" class="hero-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Baltikumi riiki</span></div>
+      <div class="stat"><span class="stat-num">11</span><span class="stat-label">Tütarettevõtet</span></div>
+      <div class="stat"><span class="stat-num">10<span>+</span></span><span class="stat-label">Aastat keskmist staaži</span></div>
+      <div class="stat"><span class="stat-num">€233M</span><span class="stat-label">Käive 2023</span></div>
+      <div class="stat"><span class="stat-num">90K<span> m²</span></span><span class="stat-label">Laopinda Baltikumis</span></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label">Meist</div>
+          <h2>Perekondliku taustaga holding kogu Baltikumis</h2>
+          <p>JNG Investments OÜ on Eestis asutatud holdingettevõte, mis ühendab endas müügi-, distributsiooni- ja logistikaettevõtteid Eestis, Lätis ja Leedus. Juhatus koosneb ettevõtte asutajatest ja omanikest — tagades strateegilise järjepidevuse ning vastutustundliku juhtimise.</p>
+          <p>Meie tugevus peitub inimestes. Töötajate keskmine staaž on üle kümne aasta — see peegeldab meie pühendumust luua pikaajalisi ja usaldusväärseid töösuhteid. Tegutseme ettevõtlikult, kuid austame traditsioone.</p>
+          <p>Grupi tütarettevõtted katavad kogu Baltikumi, pakkudes oma sektorites professionaalset teenust nii kohalikele kui ka rahvusvahelistele partneritele.</p>
+          <p>Kiirema kasvu tagamiseks oleme strateegiliselt omandanud või asutanud mitmeid ettevõtteid üle Baltikumi — sealhulgas Via 3L Latvia (2012), Terminal LT (2019) ja Balt-Hellin grupp (2022). Alates asutamisest 1991. aastal on grupp kasvanud üheks Baltikumi juhtivamaks müügi-, distributsiooni- ja logistikagrupi.</p>
+        </div>
+        <div class="about-visual">
+          <div class="about-countries">
+  <div class="country-stat">
+    <div class="cs-flag flag-ee"></div>
+    <div class="cs-info">
+      <div class="cs-name">Eesti</div>
+      <div class="cs-details">Müük · Logistika · Toiduainetööstus</div>
+    </div>
+    <div class="cs-count">6<small>ettevõtet</small></div>
+  </div>
+  <div class="country-stat">
+    <div class="cs-flag flag-lv"></div>
+    <div class="cs-info">
+      <div class="cs-name">Läti</div>
+      <div class="cs-details">Müük · Logistika · Toiduainetööstus</div>
+    </div>
+    <div class="cs-count">3<small>ettevõtet</small></div>
+  </div>
+  <div class="country-stat">
+    <div class="cs-flag flag-lt"></div>
+    <div class="cs-info">
+      <div class="cs-name">Leedu</div>
+      <div class="cs-details">Müük · Logistika · Toiduainetööstus</div>
+    </div>
+    <div class="cs-count">2<small>ettevõtet</small></div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="history" class="history">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Ajalugu</div>
+        <h2>34 aastat kasvu Baltikumis</h2>
+        <p>700+ töötajat, ligikaudu 230 miljonit eurot netomüüki aastas. Vaatame tagasi teekonnale, mis on meid kujundanud.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-year">1991</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Jungenti asutamine Tallinnas, Eestis</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">1996</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Ettevõtte omandamine Riias, Lätis — grupi laienemise algus</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2001</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Via 3L asutamine Tallinnas, Eestis — logistikaäri käivitamine</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2007</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Shelli määrdeainete äri käivitamine Jungent Groupi poolt kogu Baltikumis</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2007</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Shell Lietuva nimetati juunis ümber Jungent Lietuva UAB</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2011</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Jungent Groupi asutamine — ümberkorraldamine Baltikumi müügi-, turundus- ja logistikateenuste grupiks</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2012</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Via 3L Freight asutamine — rahvusvahelise transporditeenuse käivitamine</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2012</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Via 3L Latvia logistikaettevõtte asutamine Lätis</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2014</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Kesklao laienduse 2. etapp Eestis (33 000 m²) ning uue 13 000 m² laopinna rentimine Lätis</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2017</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Jungent Group nimetati ümber <strong>JNG Investments</strong>iks</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2018</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Colgate-Palmolive makrodistributori staatus kogu Baltikumis</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2019</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Terminal LT logistika omandamine Girteka grupilt Leedus ja nimetamine Via 3L LT UAB'ks</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2022</span>
+          <div class="tl-dot"></div>
+          <p class="tl-text">Balt-Hellin AS grupi omandamine</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Meie ettevõtted</div>
+        <h2>Grupi tütarettevõtted Baltikumis</h2>
+        <p>JNG grupp hõlmab müügi-, distributsiooni- ja logistikaettevõtteid, mis katavad kogu Baltikumi ja pakuvad oma sektorites tipptasemel teenust.</p>
+      </div>
+
+      <div class="shell-banner">
+        <div class="shell-badge">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5C25.1 5 5 25.1 5 50s20.1 45 45 45 45-20.1 45-45S74.9 5 50 5z" fill="#E8000D"/><path d="M50 15c-19.3 0-35 15.7-35 35s15.7 35 35 35 35-15.7 35-35-15.7-35-35-35zm0 8l8 22H42l8-22zm-18 17h12l-6 20-6-20zm36 0h12l-6 20-6-20zm-30 22l-8-18h16l-8 18zm24 0l-8-18h16l-8 18z" fill="#FFCD00"/></svg>
+        </div>
+        <div class="shell-content">
+          <h3>Shell määrdeainete makrodistribuutor Baltikumis</h3>
+          <p>Jungent on Shell mootoriõli ning määrdeainete ja Quaker Houghton toodete makrodistribuutor kogu Baltikumis – pakume määrdeaineid nii autondus-, transpordi-, tööstus-, merendus-, kui ka lennundussektorile. Juba alates aastast 2007 oleme pühendunud kvaliteetsete määrdeainete ning tehniliste vedelike edasimüügile, esindades ühte maailma kõige tuntumat brändi. Lisaks pakume oma klientidele ka igapäevast tehnilist tuge ning erinevaid tugiteenuseid. Meid on viiel korral tunnustatud Shelli poolt Euroopa ja Aafrika piirkonna parimaks määrdeainete distribuutoriks.</p>
+          <a href="https://oil.jungent.eu/et/" class="shell-link" target="_blank" rel="noopener">Vaata Shell määrdeained →</a>
+        </div>
+      </div>
+
+      <!-- Estonia -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-ee"></div>
+          <h3>Eesti</h3>
+          <span class="country-subtitle">Estonia</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Müük &amp; Distributsioon</div>
+              <h3>Jungent Estonia OÜ</h3>
+              <p>Tarbekaupade müük ja distributsioon Eesti turul. Professionaalne müügimeeskond ning laialdane klientide ja partnerite võrgustik kogu riigis.</p>
+              <a href="https://www.jungent.eu/et" class="card-link" target="_blank" rel="noopener">Ava veebileht →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Toiduainetööstus</div>
+              <h3>Balt-Hellin OÜ</h3>
+              <p>Toiduainetööstuse tarnija, mille moto on "Maitsed ja inspiratsioon toiduprofessionaalidele". Balt-Hellin pakub kvaliteetseid toiduainetega seotud lahendusi professionaalsetele kokkadele ja toidutööstusele.</p>
+              <a href="https://hellin.eu/" class="card-link" target="_blank" rel="noopener">Ava veebileht →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Logistika</div>
+              <h3>Via 3L OÜ</h3>
+              <p>Komplekssed logistikalahendused, laondus ning transpordikorraldus ettevõtetele üle kogu Baltikumi. Usaldusväärne partner tarneahela haldamisel.</p>
+              <a href="https://via3l.eu/et/" class="card-link" target="_blank" rel="noopener">Ava veebileht →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Rahvusvaheline kaubavedu</div>
+              <h3>Via 3L Freight OÜ</h3>
+              <p>Rahvusvaheline ekspedeerimisteenus ja kaubavedu, ühendades Baltikumi tõhusalt Euroopa ja globaalsete kaubaturgudega.</p>
+              <a href="https://via3l.eu/et/rahvusvaheline-transport/" class="card-link" target="_blank" rel="noopener">Ava veebileht →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Ekspedeerimisteenus</div>
+              <h3>Via 3L Spedition OÜ</h3>
+              <p>Kaubaekspedeerimise spetsialist, kes tagab kaubavedude sujuva koordineerimise rahvusvahelisel tasandil ning optimaalsed logistikalahendused partnerettevõtetele.</p>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Tööstuskeemia &amp; Abrasiivid</div>
+              <h3>NB Quality Group OÜ</h3>
+              <p>2009. aastal asutatud tööstuskeemia ja abrasiivide turuliider Eestis. Pakub äriklientidele keemiatooteid, lõike- ja lihimisriistu, tööohutusvarustust ning keevitustooteid. JNG Investments omandas 50% osaluse 2018. aastal.</p>
+              <a href="https://nbquality.eu/" class="card-link" target="_blank" rel="noopener">Ava veebileht →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latvia -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-lv"></div>
+          <h3>Läti</h3>
+          <span class="country-subtitle">Latvija</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Logistika</div>
+              <h3>Via 3L Latvia AS</h3>
+              <p>Läti tütarettevõte pakub laiaulatuslikke logistika- ja transpordilahendusi, toetades grupi tarneahela sujuvat toimimist Lätis.</p>
+              <a href="https://via3l.eu/lv/" class="card-link" target="_blank" rel="noopener">Ava veebileht →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Müük &amp; Distributsioon</div>
+              <h3>Jungent Latvia AS</h3>
+              <p>Tarbekaupade müük ja distributsioon Läti turul. Jungent Latvia kannab edasi grupi põhiväärtusi ja kliendikeskset lähenemist.</p>
+              <a href="https://www.jungent.eu/lv" class="card-link" target="_blank" rel="noopener">Ava veebileht →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Toiduainetööstus</div>
+              <h3>Balt-Hellin SIA</h3>
+              <p>Toiduainetööstuse tarnija Läti turul. Balt-Hellin SIA pakub kvaliteetseid toiduaineid ja lahendusi toiduprofessionaalidele.</p>
+              <a href="https://hellin.eu/lv/" class="card-link" target="_blank" rel="noopener">Ava veebileht →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lithuania -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-lt"></div>
+          <h3>Leedu</h3>
+          <span class="country-subtitle">Lietuva</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="lt">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Müük &amp; Distributsioon</div>
+              <h3>Jungent Lietuva UAB</h3>
+              <p>Tarbekaupade müük ja distributsioon Leedu turul. Jungent Lietuva UAB esindab juhtivaid ülemaailmseid kaubamärke ning hoiab laialdast partnerite ja klientide võrgustikku üle kogu Leedu.</p>
+              <a href="https://www.jungent.eu/lt" class="card-link" target="_blank" rel="noopener">Ava veebileht →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lt">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Logistika &amp; Kaubavedu</div>
+              <h3>Via 3L LT UAB</h3>
+              <p>Leedu logistikaüksus toetab grupi tegevust Leedu turul, pakkudes transpordi- ja ekspedeerimislahendusi nii kohalikele kui ka rahvusvahelistele partneritele.</p>
+              <a href="https://via3l.eu/lt/" class="card-link" target="_blank" rel="noopener">Ava veebileht →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section id="values" class="values">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Väärtused</div>
+        <h2>Mida me usume</h2>
+        <p>Meie väärtused kujunevad aastakümnete pikkusest kogemusest, usalduslikest suhetest ning vastutustundlikust ettevõtlusest.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(43,149,208,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B95D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Pikaajalised suhted</h3>
+          <p>Meie töötajate keskmiselt üle 10-aastane staaž peegeldab pühendumust luua stabiilseid ja usaldusväärseid töösuhteid. Sama põhimõtet kandub ka kliendisuhetesse.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(139,32,53,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8B2035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Kohalik ekspertiis</h3>
+          <p>Kolmes riigis tegutsedes tunneme Baltikumi ärikeskkonda põhjalikult. Meie kohalikud meeskonnad toovad kaasa sügava turuteadmise ja kultuurilise mõistmise.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(26,107,60,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A6B3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Perekondlik vastutus</h3>
+          <p>Omanikepoolne juhtimine tagab pikaajalise perspektiivi. Vastutame oma töötajate, klientide, partnerite ja kogukondade ees kõigis kolmes riigis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Kontakt</div>
+        <h2>Võtke meiega ühendust</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h3>JNG Investments OÜ</h3>
+          <div class="contact-detail">
+            <strong>Registrikood</strong>
+            <span>10067264 — Eesti äriregister</span>
+          </div>
+          <div class="contact-detail">
+            <strong>KMKR</strong>
+            <span>EE100288418</span>
+          </div>
+          <div class="contact-detail">
+            <strong>Telefon</strong>
+            <a href="tel:+3276663800">+327 666 3800</a>
+          </div>
+          <div class="contact-detail">
+            <strong>E-post</strong>
+            <a href="mailto:info@jng.investments">info@jng.investments</a>
+          </div>
+          <div class="contact-detail">
+            <strong>Veebileht</strong>
+            <a href="https://jng.investments">jng.investments</a>
+          </div>
+          <div class="contact-detail">
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/company/jng-investments-ltd/" target="_blank" rel="noopener">JNG Investments OÜ</a>
+          </div>
+          <div class="contact-detail">
+            <strong>Aadress</strong>
+            <span>Paldiski mnt 11, 3. korrus<br>Kesklinna linnaosa, 10137 Tallinn</span>
+          </div>
+        </div>
+        <div>
+          <p class="section-label" style="margin-bottom:20px">Esindatus Baltikumis</p>
+          <div class="presence-grid">
+            <div class="presence-item">
+              <div class="presence-flag flag-ee"></div>
+              <strong>Eesti</strong>
+              <span>Tallinn</span>
+            </div>
+            <div class="presence-item">
+              <div class="presence-flag flag-lv"></div>
+              <strong>Läti</strong>
+              <span>Rīga</span>
+            </div>
+            <div class="presence-item">
+              <div class="presence-flag flag-lt"></div>
+              <strong>Leedu</strong>
+              <span>Vilnius</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <div id="gmap-et"></div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /lang-et -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     ██████  LATVIAN / LATVIEŠU  ██████
+════════════════════════════════════════════════════════ -->
+<div class="lang-content" data-lang="lv" hidden>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">Baltijas pārdošanas, izplatīšanas un loģistikas speciālists kopš 1991. gada</span>
+        <h1 class="hero-title">Ieguldām<br><em>Baltijas</em><br>nākotnē</h1>
+        <p class="hero-sub">Baltijas pārdošanas, izplatīšanas un loģistikas uzņēmumus apvienojoša holdingkompānija. Vairāk nekā trīs gadu desmitu pieredze, stingras saknes, skaidrs virziens.</p>
+        <div class="hero-actions">
+          <a href="#portfolio-lv" class="btn btn-primary">Mūsu uzņēmumi</a>
+          <a href="#about-lv" class="btn btn-outline">Par mums</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo-wrap">
+          <img src="JNG_logo.webp" alt="JNG Investments" class="hero-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Baltijas valstis</span></div>
+      <div class="stat"><span class="stat-num">11</span><span class="stat-label">Meitasuzņēmumi</span></div>
+      <div class="stat"><span class="stat-num">10<span>+</span></span><span class="stat-label">Gadi vidējais darba stāžs</span></div>
+      <div class="stat"><span class="stat-num">€233M</span><span class="stat-label">Apgrozījums 2023</span></div>
+      <div class="stat"><span class="stat-num">90K<span> m²</span></span><span class="stat-label">Noliktavas platība</span></div>
+    </div>
+  </section>
+
+  <section id="about-lv" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label">Par mums</div>
+          <h2>Ģimenes holdingkompānija visā Baltijā</h2>
+          <p>JNG Investments OÜ ir Igaunijā dibināta holdingkompānija, kas apvieno pārdošanas, izplatīšanas un loģistikas uzņēmumus Igaunijā, Latvijā un Lietuvā. Valdi veido uzņēmuma dibinātāji un īpašnieki — nodrošinot stratēģisko pēctecību un atbildīgu vadību.</p>
+          <p>Mūsu spēks slēpjas cilvēkos. Darbinieku vidējais darba stāžs pārsniedz desmit gadus — tas liecina par mūsu apņemšanos veidot ilgtermiņa un uzticamas darba attiecības. Darbojamies uzņēmīgi, taču cienām tradīcijas.</p>
+          <p>Grupas meitasuzņēmumi aptver visu Baltiju, sniedzot profesionālus pakalpojumus gan vietējiem, gan starptautiskajiem partneriem savās nozarēs.</p>
+          <p>Lai paātrinātu izaugsmi, esam stratēģiski iegādājušies vai dibinājuši vairākus uzņēmumus visā Baltijā — tostarp Via 3L Latvia (2012), Terminal LT (2019) un Balt-Hellin AS grupu (2022). Kopš dibināšanas 1991. gadā grupa ir izaugusi par vienu no vadošajiem pārdošanas, izplatīšanas un loģistikas grupām Baltijā.</p>
+        </div>
+        <div class="about-visual">
+          <div class="about-countries">
+  <div class="country-stat">
+    <div class="cs-flag flag-ee"></div>
+    <div class="cs-info">
+      <div class="cs-name">Igaunija</div>
+      <div class="cs-details">Pārdošana · Loģistika · Pārtikas rūpniecība</div>
+    </div>
+    <div class="cs-count">6<small>uzņēmumi</small></div>
+  </div>
+  <div class="country-stat">
+    <div class="cs-flag flag-lv"></div>
+    <div class="cs-info">
+      <div class="cs-name">Latvija</div>
+      <div class="cs-details">Pārdošana · Loģistika · Pārtikas rūpniecība</div>
+    </div>
+    <div class="cs-count">3<small>uzņēmumi</small></div>
+  </div>
+  <div class="country-stat">
+    <div class="cs-flag flag-lt"></div>
+    <div class="cs-info">
+      <div class="cs-name">Lietuva</div>
+      <div class="cs-details">Pārdošana · Loģistika · Pārtikas rūpniecība</div>
+    </div>
+    <div class="cs-count">2<small>uzņēmumi</small></div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="history-lv" class="history">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Vēsture</div>
+        <h2>34 gadi izaugsmes Baltijā</h2>
+        <p>700+ darbinieku, aptuveni 230 miljoni eiro neto pārdošanas gadā. Skatāmies atpakaļ uz ceļu, kas mūs veidojis.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><span class="tl-year">1991</span><div class="tl-dot"></div><p class="tl-text">Jungent dibināšana Tallinā, Igaunijā</p></div>
+        <div class="tl-item"><span class="tl-year">1996</span><div class="tl-dot"></div><p class="tl-text">Uzņēmuma iegāde Rīgā, Latvijā — grupas paplašināšanās sākums</p></div>
+        <div class="tl-item"><span class="tl-year">2001</span><div class="tl-dot"></div><p class="tl-text">Via 3L dibināšana Tallinā, Igaunijā — loģistikas biznesa uzsākšana</p></div>
+        <div class="tl-item"><span class="tl-year">2007</span><div class="tl-dot"></div><p class="tl-text">Shell smērvielu biznesa uzsākšana un izplatīšana Jungent Group visā Baltijā</p></div>
+        <div class="tl-item"><span class="tl-year">2007</span><div class="tl-dot"></div><p class="tl-text">Jūnijā Shell Lietuva tika pārdēvēta par Jungent Lietuva UAB</p></div>
+        <div class="tl-item"><span class="tl-year">2011</span><div class="tl-dot"></div><p class="tl-text">Jungent Group dibināšana — pārstrukturēšana Baltijas pārdošanas/mārketinga un loģistikas pakalpojumu grupā</p></div>
+        <div class="tl-item"><span class="tl-year">2012</span><div class="tl-dot"></div><p class="tl-text">Via 3L Freight dibināšana — starptautiskā transporta pakalpojumu uzsākšana</p></div>
+        <div class="tl-item"><span class="tl-year">2012</span><div class="tl-dot"></div><p class="tl-text">Via 3L Latvia loģistikas uzņēmuma dibināšana</p></div>
+        <div class="tl-item"><span class="tl-year">2014</span><div class="tl-dot"></div><p class="tl-text">Centrālās noliktavas paplašinājuma 2. posms Igaunijā (33 000 m²) un jauna 13 000 m² noliktavas telpa Latvijā</p></div>
+        <div class="tl-item"><span class="tl-year">2017</span><div class="tl-dot"></div><p class="tl-text">Jungent Group pārdēvēta par <strong>JNG Investments</strong></p></div>
+        <div class="tl-item"><span class="tl-year">2018</span><div class="tl-dot"></div><p class="tl-text">Colgate-Palmolive makrodistributora statuss visā Baltijā</p></div>
+        <div class="tl-item"><span class="tl-year">2019</span><div class="tl-dot"></div><p class="tl-text">Terminal LT loģistikas iegāde no Girteka grupas Lietuvā un pārdēvēšana par Via 3L LT UAB</p></div>
+        <div class="tl-item"><span class="tl-year">2022</span><div class="tl-dot"></div><p class="tl-text">Balt-Hellin AS grupas iegāde</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio-lv" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Mūsu uzņēmumi</div>
+        <h2>Grupas meitasuzņēmumi Baltijā</h2>
+        <p>JNG grupa ietver pārdošanas, izplatīšanas un loģistikas uzņēmumus, kas aptver visu Baltiju un sniedz augstākā līmeņa pakalpojumus savās nozarēs.</p>
+      </div>
+
+      <div class="shell-banner">
+        <div class="shell-badge">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5C25.1 5 5 25.1 5 50s20.1 45 45 45 45-20.1 45-45S74.9 5 50 5z" fill="#E8000D"/><path d="M50 15c-19.3 0-35 15.7-35 35s15.7 35 35 35 35-15.7 35-35-15.7-35-35-35zm0 8l8 22H42l8-22zm-18 17h12l-6 20-6-20zm36 0h12l-6 20-6-20zm-30 22l-8-18h16l-8 18zm24 0l-8-18h16l-8 18z" fill="#FFCD00"/></svg>
+        </div>
+        <div class="shell-content">
+          <h3>Shell smērvielu makrodistributors Baltijā</h3>
+          <p>Jungent ir Shell motoreļļu un smērvielu, kā arī Quaker Houghton produktu makrodistributors visā Baltijā – nodrošinām smērvielas automobiļu, transporta, rūpniecības, jūrniecības un aviācijas sektoriem. Sākot no 2007. gada, esam apņēmušies pārdot kvalitatīvas smērvielas un tehniskos šķidrumus, pārstāvot vienu no pasaulē pazīstamākajiem zīmoliem. Turklāt piedāvājam saviem klientiem ikdienas tehnisko atbalstu un dažādus palīdzības pakalpojumus. Esam piecas reizes atzīti par labāko smērvielu distributoru Eiropas un Āfrikas reģionā pēc Shell vērtējuma.</p>
+          <a href="https://oil.jungent.eu/et/" class="shell-link" target="_blank" rel="noopener">Skatīt Shell smērvielas →</a>
+        </div>
+      </div>
+
+      <!-- Latvia focus -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-lv"></div>
+          <h3>Latvija</h3>
+          <span class="country-subtitle">Latvia</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Loģistika</div>
+              <h3>Via 3L Latvia AS</h3>
+              <p>Latvijas loģistikas uzņēmums piedāvā visaptverošus transporta un noliktavas risinājumus. Uzticams partneris piegādes ķēdes pārvaldībā visā Baltijā.</p>
+              <a href="https://via3l.eu/lv/" class="card-link" target="_blank" rel="noopener">Apmeklēt vietni →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Pārdošana &amp; Izplatīšana</div>
+              <h3>Jungent Latvia AS</h3>
+              <p>Patēriņa preču pārdošana un izplatīšana Latvijas tirgū. Jungent Latvia turpina grupas galvenās vērtības un uz klientu vērstu pieeju.</p>
+              <a href="https://www.jungent.eu/lv" class="card-link" target="_blank" rel="noopener">Apmeklēt vietni →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Pārtikas rūpniecība</div>
+              <h3>Balt-Hellin SIA</h3>
+              <p>Pārtikas rūpniecības piegādātājs Latvijas tirgū. Balt-Hellin SIA piedāvā augstvērtīgus produktus un risinājumus pārtikas profesionāļiem.</p>
+              <a href="https://hellin.eu/lv/" class="card-link" target="_blank" rel="noopener">Apmeklēt vietni →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Estonia -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-ee"></div>
+          <h3>Igaunija</h3>
+          <span class="country-subtitle">Eesti</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Pārdošana &amp; Izplatīšana</div>
+              <h3>Jungent Estonia OÜ</h3>
+              <p>Patēriņa preču pārdošana un izplatīšana Igaunijas tirgū. Profesionāls pārdošanas komanda un plaša partneru tīkls visā valstī.</p>
+              <a href="https://www.jungent.eu/et" class="card-link" target="_blank" rel="noopener">Apmeklēt vietni →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Tirdzniecība &amp; Vairumtirdzniecība</div>
+              <h3>Balt-Hellin OÜ</h3>
+              <p>Baltijas tirdzniecības un vairumtirdzniecības speciālists, piedāvājot plašu preču klāstu komerciālajiem klientiem.</p>
+              <a href="https://hellin.eu/" class="card-link" target="_blank" rel="noopener">Apmeklēt vietni →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Loģistika</div>
+              <h3>Via 3L OÜ</h3>
+              <p>Kompleksi loģistikas risinājumi, noliktavas pakalpojumi un transporta koordinācija uzņēmumiem visā Baltijā.</p>
+              <a href="https://via3l.eu/en/" class="card-link" target="_blank" rel="noopener">Apmeklēt vietni →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Starptautiskie kravu pārvadājumi</div>
+              <h3>Via 3L Freight OÜ</h3>
+              <p>Starptautiskie ekspedīcijas pakalpojumi un kravu pārvadājumi, efektīvi savienojot Baltiju ar Eiropas un globālajiem tirgiem.</p>
+              <a href="https://via3l.eu/en/international-transportation-services/" class="card-link" target="_blank" rel="noopener">Apmeklēt vietni →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lithuania -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-lt"></div>
+          <h3>Lietuva</h3>
+          <span class="country-subtitle">Lithuania</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="lt">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Pārdošana &amp; Izplatīšana</div>
+              <h3>Jungent Lietuva UAB</h3>
+              <p>Patēriņa preču pārdošana un izplatīšana Lietuvas tirgū. Jungent Lietuva UAB pārstāv vadošos pasaules zīmolus un uztur plašu partneru un klientu tīklu visā Lietuvā.</p>
+              <a href="https://www.jungent.eu/lt" class="card-link" target="_blank" rel="noopener">Apmeklēt vietni →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lt">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Loģistika &amp; Kravu pārvadājumi</div>
+              <h3>Via 3L LT UAB</h3>
+              <p>Lietuvas loģistikas vienība atbalsta grupas darbību Lietuvas tirgū, piedāvājot transporta un ekspedīcijas risinājumus vietējiem un starptautiskajiem partneriem.</p>
+              <a href="https://via3l.eu/lt/" class="card-link" target="_blank" rel="noopener">Apmeklēt vietni →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="values-lv" class="values">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Vērtības</div>
+        <h2>Mūsu pārliecība</h2>
+        <p>Mūsu vērtības veidojas gadu desmitu pieredzē, uzticamās attiecībās un atbildīgā uzņēmējdarbībā.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(43,149,208,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B95D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Ilgtermiņa attiecības</h3>
+          <p>Darbinieku vidējais darba stāžs virs 10 gadiem atspoguļo mūsu apņemšanos veidot stabilus un uzticamus darba apstākļus. Tas pats princips attiecas arī uz klientu attiecībām.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(139,32,53,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8B2035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Vietējā ekspertīze</h3>
+          <p>Darbojamies trīs valstīs, dziļi izprotot Baltijas uzņēmējdarbības vidi. Mūsu vietējās komandas nodrošina dziļas tirgus zināšanas un kultūras izpratni.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(26,107,60,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A6B3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Ģimenes atbildība</h3>
+          <p>Īpašnieku vadīta pārvaldība nodrošina ilgtermiņa perspektīvu. Esam atbildīgi pret saviem darbiniekiem, klientiem, partneriem un kopienām visās trīs valstīs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-lv" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Kontakti</div>
+        <h2>Sazinieties ar mums</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h3>JNG Investments OÜ</h3>
+          <div class="contact-detail">
+            <strong>Reģistrācijas Nr.</strong>
+            <span>10067264 — Igaunijas uzņēmumu reģistrs</span>
+          </div>
+          <div class="contact-detail">
+            <strong>PVN Nr.</strong>
+            <span>EE100288418</span>
+          </div>
+          <div class="contact-detail">
+            <strong>Tālrunis</strong>
+            <a href="tel:+3276663800">+327 666 3800</a>
+          </div>
+          <div class="contact-detail">
+            <strong>E-pasts</strong>
+            <a href="mailto:info@jng.investments">info@jng.investments</a>
+          </div>
+          <div class="contact-detail">
+            <strong>Tīmekļa vietne</strong>
+            <a href="https://jng.investments">jng.investments</a>
+          </div>
+          <div class="contact-detail">
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/company/jng-investments-ltd/" target="_blank" rel="noopener">JNG Investments OÜ</a>
+          </div>
+          <div class="contact-detail">
+            <strong>Adrese</strong>
+            <span>Paldiski mnt 11, 3. stāvs<br>Kesklinna linnaosa, 10137 Tallina</span>
+          </div>
+        </div>
+        <div>
+          <p class="section-label" style="margin-bottom:20px">Pārstāvniecība Baltijā</p>
+          <div class="presence-grid">
+            <div class="presence-item">
+              <div class="presence-flag flag-ee"></div>
+              <strong>Igaunija</strong>
+              <span>Tallina</span>
+            </div>
+            <div class="presence-item">
+              <div class="presence-flag flag-lv"></div>
+              <strong>Latvija</strong>
+              <span>Rīga</span>
+            </div>
+            <div class="presence-item">
+              <div class="presence-flag flag-lt"></div>
+              <strong>Lietuva</strong>
+              <span>Viļņa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <div id="gmap-lv"></div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /lang-lv -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     ██████  LITHUANIAN / LIETUVIŲ  ██████
+════════════════════════════════════════════════════════ -->
+<div class="lang-content" data-lang="lt" hidden>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">Baltijos pardavimų, platinimo ir logistikos specialistas nuo 1991 metų</span>
+        <h1 class="hero-title">Investuojame<br><em>į Baltijos</em><br>ateitį</h1>
+        <p class="hero-sub">Baltijos pardavimų, platinimo ir logistikos įmones jungianti holdingo bendrovė. Daugiau nei tris dešimtmečius patirties, tvirtos šaknys, aiškus kursas.</p>
+        <div class="hero-actions">
+          <a href="#portfolio-lt" class="btn btn-primary">Mūsų įmonės</a>
+          <a href="#about-lt" class="btn btn-outline">Apie mus</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo-wrap">
+          <img src="JNG_logo.webp" alt="JNG Investments" class="hero-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Baltijos valstybės</span></div>
+      <div class="stat"><span class="stat-num">11</span><span class="stat-label">Dukterinės įmonės</span></div>
+      <div class="stat"><span class="stat-num">10<span>+</span></span><span class="stat-label">Metų vidutinis darbo stažas</span></div>
+      <div class="stat"><span class="stat-num">€233M</span><span class="stat-label">Pajamos 2023</span></div>
+      <div class="stat"><span class="stat-num">90K<span> m²</span></span><span class="stat-label">Sandėlio plotas</span></div>
+    </div>
+  </section>
+
+  <section id="about-lt" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label">Apie mus</div>
+          <h2>Šeimos holdingo bendrovė visame Baltijos regione</h2>
+          <p>JNG Investments OÜ yra Estijoje įkurta holdingo bendrovė, jungianti pardavimų, platinimo ir logistikos įmones Estijoje, Latvijoje ir Lietuvoje. Valdybą sudaro bendrovės įkūrėjai ir savininkai — tai užtikrina strateginį tęstinumą ir atsakingą valdymą.</p>
+          <p>Mūsų jėga slypi žmonėse. Darbuotojų vidutinis darbo stažas viršija dešimt metų — tai liudija mūsų įsipareigojimą kurti ilgalaikius ir patikimus darbo santykius. Veikiame verslingai, tačiau gerbiame tradicijas.</p>
+          <p>Grupės dukterinės įmonės apima visą Baltijos regioną, teikdamos profesionalias paslaugas tiek vietiniams, tiek tarptautiniams partneriams.</p>
+          <p>Siekdami spartesnio augimo, strategiškai įsigijome ar įkūrėme kelias įmones visame Baltijos regione — įskaitant Via 3L Latvia (2012), Terminal LT (2019) ir Balt-Hellin AS grupę (2022). Nuo įkūrimo 1991 metais grupė išaugo į vieną didžiausių pardavimų, platinimo ir logistikos grupių Baltijos regione.</p>
+        </div>
+        <div class="about-visual">
+          <div class="about-countries">
+  <div class="country-stat">
+    <div class="cs-flag flag-ee"></div>
+    <div class="cs-info">
+      <div class="cs-name">Estija</div>
+      <div class="cs-details">Pardavimai · Logistika · Maisto pramonė</div>
+    </div>
+    <div class="cs-count">6<small>įmonės</small></div>
+  </div>
+  <div class="country-stat">
+    <div class="cs-flag flag-lv"></div>
+    <div class="cs-info">
+      <div class="cs-name">Latvija</div>
+      <div class="cs-details">Pardavimai · Logistika · Maisto pramonė</div>
+    </div>
+    <div class="cs-count">3<small>įmonės</small></div>
+  </div>
+  <div class="country-stat">
+    <div class="cs-flag flag-lt"></div>
+    <div class="cs-info">
+      <div class="cs-name">Lietuva</div>
+      <div class="cs-details">Pardavimai · Logistika · Maisto pramonė</div>
+    </div>
+    <div class="cs-count">2<small>įmonės</small></div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="history-lt" class="history">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Istorija</div>
+        <h2>34 metai augimo Baltijos regione</h2>
+        <p>700+ darbuotojų, apie 230 milijonų eurų grynosios pardavimų per metus. Žvelgiame atgal į kelią, kuris mus formavo.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><span class="tl-year">1991</span><div class="tl-dot"></div><p class="tl-text">Jungent įkūrimas Taline, Estijoje</p></div>
+        <div class="tl-item"><span class="tl-year">1996</span><div class="tl-dot"></div><p class="tl-text">Įmonės įsigijimas Rygoje, Latvijoje — grupės plėtros pradžia</p></div>
+        <div class="tl-item"><span class="tl-year">2001</span><div class="tl-dot"></div><p class="tl-text">Via 3L įkūrimas Taline, Estijoje — logistikos verslo pradžia</p></div>
+        <div class="tl-item"><span class="tl-year">2007</span><div class="tl-dot"></div><p class="tl-text">Shell tepalų verslo ir platinimo pradžia Jungent Group visame Baltijos regione</p></div>
+        <div class="tl-item"><span class="tl-year">2007</span><div class="tl-dot"></div><p class="tl-text">Birželį Shell Lietuva pervadinta Jungent Lietuva UAB</p></div>
+        <div class="tl-item"><span class="tl-year">2011</span><div class="tl-dot"></div><p class="tl-text">Jungent Group įkūrimas — restruktūrizacija į Baltijos pardavimų/rinkodaros ir logistikos paslaugų grupę</p></div>
+        <div class="tl-item"><span class="tl-year">2012</span><div class="tl-dot"></div><p class="tl-text">Via 3L Freight įkūrimas — tarptautinio transporto paslaugų pradžia</p></div>
+        <div class="tl-item"><span class="tl-year">2012</span><div class="tl-dot"></div><p class="tl-text">Via 3L Latvia logistikos įmonės įkūrimas</p></div>
+        <div class="tl-item"><span class="tl-year">2014</span><div class="tl-dot"></div><p class="tl-text">Centrinio sandėlio plėtros 2-asis etapas Estijoje (33 000 m²) ir nauja 13 000 m² sandėlio patalpa Latvijoje</p></div>
+        <div class="tl-item"><span class="tl-year">2017</span><div class="tl-dot"></div><p class="tl-text">Jungent Group pervadintas <strong>JNG Investments</strong></p></div>
+        <div class="tl-item"><span class="tl-year">2018</span><div class="tl-dot"></div><p class="tl-text">Colgate-Palmolive makrodistributoriaus statusas visame Baltijos regione</p></div>
+        <div class="tl-item"><span class="tl-year">2019</span><div class="tl-dot"></div><p class="tl-text">Terminal LT logistikos įsigijimas iš Girteka grupės Lietuvoje ir pervadinimas Via 3L LT UAB</p></div>
+        <div class="tl-item"><span class="tl-year">2022</span><div class="tl-dot"></div><p class="tl-text">Balt-Hellin AS grupės įsigijimas</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio-lt" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Mūsų įmonės</div>
+        <h2>Grupės dukterinės įmonės Baltijos regione</h2>
+        <p>JNG grupę sudaro pardavimų, platinimo ir logistikos įmonės, apimančios visą Baltijos regioną ir teikiančios aukščiausio lygio paslaugas savo sektoriuose.</p>
+      </div>
+
+      <div class="shell-banner">
+        <div class="shell-badge">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5C25.1 5 5 25.1 5 50s20.1 45 45 45 45-20.1 45-45S74.9 5 50 5z" fill="#E8000D"/><path d="M50 15c-19.3 0-35 15.7-35 35s15.7 35 35 35 35-15.7 35-35-15.7-35-35-35zm0 8l8 22H42l8-22zm-18 17h12l-6 20-6-20zm36 0h12l-6 20-6-20zm-30 22l-8-18h16l-8 18zm24 0l-8-18h16l-8 18z" fill="#FFCD00"/></svg>
+        </div>
+        <div class="shell-content">
+          <h3>Shell tepalų makrodistributorius Baltijos regione</h3>
+          <p>Jungent yra Shell variklinės alyvos ir tepalų bei Quaker Houghton produktų makrodistributorius visame Baltijos regione – tiekiame tepalus automobilių, transporto, pramonės, jūrininkystės ir aviacijos sektoriams. Nuo 2007 metų esame įsipareigoję platinti aukštos kokybės tepalus ir technines skysčius, atstovaujant vienam garsiausių pasaulio prekių ženklų. Be to, teikiame klientams kasdienę techninę pagalbą ir įvairias papildomas paslaugas. Esame penkis kartus apdovanoti Shell kaip geriausias tepalų distributorius Europos ir Afrikos regione.</p>
+          <a href="https://oil.jungent.eu/et/" class="shell-link" target="_blank" rel="noopener">Peržiūrėti Shell tepalus →</a>
+        </div>
+      </div>
+
+      <!-- Lithuania focus -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-lt"></div>
+          <h3>Lietuva</h3>
+          <span class="country-subtitle">Lithuania</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="lt">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Pardavimai &amp; Platinimas</div>
+              <h3>Jungent Lietuva UAB</h3>
+              <p>Vartojimo prekių pardavimas ir platinimas Lietuvos rinkoje. Jungent Lietuva UAB atstovauja pirmaujančioms pasaulinėms prekių ženklams ir palaiko plačią partnerių bei klientų tinklą visoje Lietuvoje.</p>
+              <a href="https://www.jungent.eu/lt" class="card-link" target="_blank" rel="noopener">Apsilankyti svetainėje →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lt">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Logistika &amp; Krovinių pervežimas</div>
+              <h3>Via 3L LT UAB</h3>
+              <p>Lietuvos logistikos padalinys teikia transporto ir ekspedicijos sprendimus vietiniams bei tarptautiniams partneriams, palaikydamas grupės veiklą Lietuvos rinkoje.</p>
+              <a href="https://via3l.eu/lt/" class="card-link" target="_blank" rel="noopener">Apsilankyti svetainėje →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Estonia -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-ee"></div>
+          <h3>Estija</h3>
+          <span class="country-subtitle">Estonia</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Pardavimai &amp; Platinimas</div>
+              <h3>Jungent Estonia OÜ</h3>
+              <p>Vartojimo prekių pardavimas ir platinimas Estijos rinkoje. Profesionali pardavimų komanda ir platus partnerių tinklas visoje šalyje.</p>
+              <a href="https://www.jungent.eu/et" class="card-link" target="_blank" rel="noopener">Apsilankyti svetainėje →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Prekyba &amp; Didmeninė prekyba</div>
+              <h3>Balt-Hellin OÜ</h3>
+              <p>Baltijos prekybos ir didmeninės prekybos specialistas, siūlantis platų produktų asortimentą komerciniams klientams.</p>
+              <a href="https://hellin.eu/" class="card-link" target="_blank" rel="noopener">Apsilankyti svetainėje →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Logistika</div>
+              <h3>Via 3L OÜ</h3>
+              <p>Kompleksiniai logistikos sprendimai, sandėliavimas ir transporto koordinavimas įmonėms visame Baltijos regione.</p>
+              <a href="https://via3l.eu/en/" class="card-link" target="_blank" rel="noopener">Apsilankyti svetainėje →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Tarptautinis krovinių pervežimas</div>
+              <h3>Via 3L Freight OÜ</h3>
+              <p>Tarptautinės ekspedicijos paslaugos ir krovinių pervežimas, efektyviai jungiantis Baltijos regioną su Europos ir pasaulinėmis rinkomis.</p>
+              <a href="https://via3l.eu/en/international-transportation-services/" class="card-link" target="_blank" rel="noopener">Apsilankyti svetainėje →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latvia -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-lv"></div>
+          <h3>Latvija</h3>
+          <span class="country-subtitle">Latvia</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Logistika</div>
+              <h3>Via 3L Latvia AS</h3>
+              <p>Latvijos logistikos padalinys siūlo visapusiškus transporto ir sandėliavimo sprendimus, palaikydamas sklandų grupės tiekimo grandinės veikimą Latvijoje.</p>
+              <a href="https://via3l.eu/lv/" class="card-link" target="_blank" rel="noopener">Apsilankyti svetainėje →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Pardavimai &amp; Platinimas</div>
+              <h3>Jungent Latvia AS</h3>
+              <p>Vartojimo prekių pardavimas ir platinimas Latvijos rinkoje. Jungent Latvia tęsia grupės pagrindines vertybes ir į klientą orientuotą požiūrį.</p>
+              <a href="https://www.jungent.eu/lv" class="card-link" target="_blank" rel="noopener">Apsilankyti svetainėje →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Maisto pramonė</div>
+              <h3>Balt-Hellin SIA</h3>
+              <p>Maisto pramonės tiekėjas Latvijos rinkoje. Balt-Hellin SIA siūlo aukštos kokybės produktus ir sprendimus maisto profesionalams.</p>
+              <a href="https://hellin.eu/lt/" class="card-link" target="_blank" rel="noopener">Apsilankyti svetainėje →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="values-lt" class="values">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Vertybės</div>
+        <h2>Kuo tikime</h2>
+        <p>Mūsų vertybės formuojasi per dešimtmečius trunkančią patirtį, patikimus santykius ir atsakingą verslą.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(43,149,208,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B95D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Ilgalaikiai santykiai</h3>
+          <p>Darbuotojų vidutinis darbo stažas, viršijantis 10 metų, atspindi mūsų įsipareigojimą kurti stabilias ir patikimas darbo sąlygas. Tas pats principas taikomas ir santykiams su klientais.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(139,32,53,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8B2035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Vietinė ekspertizė</h3>
+          <p>Veikdami trijose valstybėse, gerai išmanome Baltijos verslo aplinką. Mūsų vietinės komandos turi gilių rinkos žinių ir kultūrinio supratimo.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(26,107,60,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A6B3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Šeimos atsakomybė</h3>
+          <p>Savininkų valdymas užtikrina ilgalaikę perspektyvą. Esame atsakingi savo darbuotojams, klientams, partneriams ir bendruomenėms visose trijose valstybėse.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-lt" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Kontaktai</div>
+        <h2>Susisiekite su mumis</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h3>JNG Investments OÜ</h3>
+          <div class="contact-detail">
+            <strong>Registracijos Nr.</strong>
+            <span>10067264 — Estijos įmonių registras</span>
+          </div>
+          <div class="contact-detail">
+            <strong>PVM kodas</strong>
+            <span>EE100288418</span>
+          </div>
+          <div class="contact-detail">
+            <strong>Telefonas</strong>
+            <a href="tel:+3276663800">+327 666 3800</a>
+          </div>
+          <div class="contact-detail">
+            <strong>El. paštas</strong>
+            <a href="mailto:info@jng.investments">info@jng.investments</a>
+          </div>
+          <div class="contact-detail">
+            <strong>Interneto svetainė</strong>
+            <a href="https://jng.investments">jng.investments</a>
+          </div>
+          <div class="contact-detail">
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/company/jng-investments-ltd/" target="_blank" rel="noopener">JNG Investments OÜ</a>
+          </div>
+          <div class="contact-detail">
+            <strong>Adresas</strong>
+            <span>Paldiski mnt 11, 3 aukštas<br>Kesklinna linnaosa, 10137 Talinas</span>
+          </div>
+        </div>
+        <div>
+          <p class="section-label" style="margin-bottom:20px">Atstovybė Baltijos regione</p>
+          <div class="presence-grid">
+            <div class="presence-item">
+              <div class="presence-flag flag-ee"></div>
+              <strong>Estija</strong>
+              <span>Talinas</span>
+            </div>
+            <div class="presence-item">
+              <div class="presence-flag flag-lv"></div>
+              <strong>Latvija</strong>
+              <span>Ryga</span>
+            </div>
+            <div class="presence-item">
+              <div class="presence-flag flag-lt"></div>
+              <strong>Lietuva</strong>
+              <span>Vilnius</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <div id="gmap-lt"></div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /lang-lt -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     ██████  ENGLISH  ██████
+════════════════════════════════════════════════════════ -->
+<div class="lang-content" data-lang="en" hidden>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">Baltic sales, distribution and logistics specialist since 1991</span>
+        <h1 class="hero-title">Investing in<br><em>Baltic</em><br>Excellence</h1>
+        <p class="hero-sub">A Baltic holding company uniting sales, distribution, and logistics businesses across Estonia, Latvia, and Lithuania. Decades of experience, deep roots, clear direction.</p>
+        <div class="hero-actions">
+          <a href="#portfolio-en" class="btn btn-primary">Our Companies</a>
+          <a href="#about-en" class="btn btn-outline">About Us</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo-wrap">
+          <img src="JNG_logo.webp" alt="JNG Investments" class="hero-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Baltic States</span></div>
+      <div class="stat"><span class="stat-num">11</span><span class="stat-label">Subsidiaries</span></div>
+      <div class="stat"><span class="stat-num">10<span>+</span></span><span class="stat-label">Years avg. employee tenure</span></div>
+      <div class="stat"><span class="stat-num">€233M</span><span class="stat-label">Revenue 2023</span></div>
+      <div class="stat"><span class="stat-num">90K<span> m²</span></span><span class="stat-label">Warehouse space</span></div>
+    </div>
+  </section>
+
+  <section id="about-en" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label">About Us</div>
+          <h2>A family-founded holding company across the Baltic region</h2>
+          <p>JNG Investments OÜ is a holding company founded in Estonia, bringing together sales, distribution, and logistics businesses operating across Estonia, Latvia, and Lithuania. The board is composed of the company's founders and owners, ensuring strategic continuity and responsible governance.</p>
+          <p>Our strength lies in our people. With an average employee tenure of over ten years, we are deeply committed to building lasting and trustworthy working relationships. We operate with entrepreneurial spirit while honouring tradition.</p>
+          <p>The group's subsidiaries span the entire Baltic region, delivering professional services in their respective sectors to both local and international partners.</p>
+          <p>To accelerate growth, we have strategically acquired or founded several companies across the Baltics — including Via 3L Latvia (2012), Terminal LT (2019), and the Balt-Hellin AS Group (2022). Since our founding in 1991, the group has grown into one of the Baltic region's leading sales, distribution, and logistics groups.</p>
+        </div>
+        <div class="about-visual">
+          <div class="about-countries">
+  <div class="country-stat">
+    <div class="cs-flag flag-ee"></div>
+    <div class="cs-info">
+      <div class="cs-name">Estonia</div>
+      <div class="cs-details">Sales · Logistics · Food Industry</div>
+    </div>
+    <div class="cs-count">6<small>companies</small></div>
+  </div>
+  <div class="country-stat">
+    <div class="cs-flag flag-lv"></div>
+    <div class="cs-info">
+      <div class="cs-name">Latvia</div>
+      <div class="cs-details">Sales · Logistics · Food Industry</div>
+    </div>
+    <div class="cs-count">3<small>companies</small></div>
+  </div>
+  <div class="country-stat">
+    <div class="cs-flag flag-lt"></div>
+    <div class="cs-info">
+      <div class="cs-name">Lithuania</div>
+      <div class="cs-details">Sales · Logistics · Food Industry</div>
+    </div>
+    <div class="cs-count">2<small>companies</small></div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="history-en" class="history">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">History</div>
+        <h2>34 Years of Growth in the Baltics</h2>
+        <p>700+ associates, approximately €230 million in net annual sales. A look back at the journey that shaped us.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><span class="tl-year">1991</span><div class="tl-dot"></div><p class="tl-text">Foundation of Jungent in Tallinn, Estonia</p></div>
+        <div class="tl-item"><span class="tl-year">1996</span><div class="tl-dot"></div><p class="tl-text">Acquisition of a company in Riga, Latvia — the start of the group's expansion</p></div>
+        <div class="tl-item"><span class="tl-year">2001</span><div class="tl-dot"></div><p class="tl-text">Foundation of Via 3L in Tallinn, Estonia — launch of logistics operations</p></div>
+        <div class="tl-item"><span class="tl-year">2007</span><div class="tl-dot"></div><p class="tl-text">Start of Shell lubricants business and distribution by Jungent Group across the Baltic countries</p></div>
+        <div class="tl-item"><span class="tl-year">2007</span><div class="tl-dot"></div><p class="tl-text">In June, Shell Lietuva was renamed Jungent Lietuva UAB</p></div>
+        <div class="tl-item"><span class="tl-year">2011</span><div class="tl-dot"></div><p class="tl-text">Jungent Group foundation; restructuring into a Baltic sales, marketing, and logistics services group</p></div>
+        <div class="tl-item"><span class="tl-year">2012</span><div class="tl-dot"></div><p class="tl-text">Foundation of Via 3L Freight — launch of international transportation services</p></div>
+        <div class="tl-item"><span class="tl-year">2012</span><div class="tl-dot"></div><p class="tl-text">Foundation of Via 3L Latvia logistics company</p></div>
+        <div class="tl-item"><span class="tl-year">2014</span><div class="tl-dot"></div><p class="tl-text">2nd stage central warehouse expansion in Estonia (33,000 m²) and new 13,000 m² warehouse space in Latvia</p></div>
+        <div class="tl-item"><span class="tl-year">2017</span><div class="tl-dot"></div><p class="tl-text">Jungent Group renamed to <strong>JNG Investments</strong></p></div>
+        <div class="tl-item"><span class="tl-year">2018</span><div class="tl-dot"></div><p class="tl-text">Became Colgate-Palmolive's macro-distributor across the Baltic states</p></div>
+        <div class="tl-item"><span class="tl-year">2019</span><div class="tl-dot"></div><p class="tl-text">Acquisition of Terminal LT logistics from Girteka Group in Lithuania and renaming to Via 3L LT UAB</p></div>
+        <div class="tl-item"><span class="tl-year">2022</span><div class="tl-dot"></div><p class="tl-text">Acquisition of Balt-Hellin AS Group</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio-en" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Portfolio</div>
+        <h2>Group Subsidiaries Across the Baltics</h2>
+        <p>The JNG group comprises sales, distribution, and logistics companies covering the entire Baltic region, delivering best-in-class services in their respective sectors.</p>
+      </div>
+
+      <div class="shell-banner">
+        <div class="shell-badge">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5C25.1 5 5 25.1 5 50s20.1 45 45 45 45-20.1 45-45S74.9 5 50 5z" fill="#E8000D"/><path d="M50 15c-19.3 0-35 15.7-35 35s15.7 35 35 35 35-15.7 35-35-15.7-35-35-35zm0 8l8 22H42l8-22zm-18 17h12l-6 20-6-20zm36 0h12l-6 20-6-20zm-30 22l-8-18h16l-8 18zm24 0l-8-18h16l-8 18z" fill="#FFCD00"/></svg>
+        </div>
+        <div class="shell-content">
+          <h3>Shell Lubricants Macro-Distributor for the Baltics</h3>
+          <p>Jungent is the macro-distributor of Shell engine oils and lubricants, as well as Quaker Houghton products, across the entire Baltic region – supplying lubricants to the automotive, transport, industrial, marine, and aviation sectors. Since 2007, we have been dedicated to the distribution of high-quality lubricants and technical fluids, representing one of the world's most recognised brands. We also provide our clients with daily technical support and a range of value-added services. We have been recognised five times by Shell as the best lubricants distributor in the Europe and Africa region.</p>
+          <a href="https://oil.jungent.eu/et/" class="shell-link" target="_blank" rel="noopener">View Shell lubricants →</a>
+        </div>
+      </div>
+
+      <!-- Estonia -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-ee"></div>
+          <h3>Estonia</h3>
+          <span class="country-subtitle">Eesti</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Sales &amp; Distribution</div>
+              <h3>Jungent Estonia OÜ</h3>
+              <p>Sales and distribution of consumer goods in the Estonian market. A professional sales team and an extensive network of clients and partners nationwide.</p>
+              <a href="https://www.jungent.eu/en" class="card-link" target="_blank" rel="noopener">Visit website →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Food Industry</div>
+              <h3>Balt-Hellin OÜ</h3>
+              <p>A food industry supplier whose motto is "Flavours and inspiration for food professionals." Balt-Hellin delivers quality food solutions to professional kitchens and the food industry across the Baltics.</p>
+              <a href="https://hellin.eu/" class="card-link" target="_blank" rel="noopener">Visit website →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Logistics</div>
+              <h3>Via 3L OÜ</h3>
+              <p>Comprehensive logistics solutions, warehousing, and transport coordination for businesses across the Baltic region. A trusted supply chain partner.</p>
+              <a href="https://via3l.eu/en/" class="card-link" target="_blank" rel="noopener">Visit website →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">International Freight</div>
+              <h3>Via 3L Freight OÜ</h3>
+              <p>International freight forwarding and cargo transportation, efficiently connecting the Baltic region with European and global markets.</p>
+              <a href="https://via3l.eu/en/international-transportation-services/" class="card-link" target="_blank" rel="noopener">Visit website →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Freight Forwarding</div>
+              <h3>Via 3L Spedition OÜ</h3>
+              <p>A specialist in freight forwarding, ensuring smooth coordination of cargo movements at the international level and delivering optimal logistics solutions to partner companies.</p>
+            </div>
+          </div>
+          <div class="company-card" data-country="ee">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Industrial Chemistry &amp; Abrasives</div>
+              <h3>NB Quality Group OÜ</h3>
+              <p>Founded in 2009, a market leader in chemical products and abrasives across Estonia. Supplies industrial chemicals, cutting and grinding tools, personal protective equipment, and welding products to business clients. JNG Investments acquired a 50% stake in 2018.</p>
+              <a href="https://nbquality.eu/" class="card-link" target="_blank" rel="noopener">Visit website →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latvia -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-lv"></div>
+          <h3>Latvia</h3>
+          <span class="country-subtitle">Latvija</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Logistics</div>
+              <h3>Via 3L Latvia AS</h3>
+              <p>The Latvian logistics entity provides comprehensive transport and warehousing solutions, supporting the group's supply chain across Latvia and the Baltics.</p>
+              <a href="https://via3l.eu/en/" class="card-link" target="_blank" rel="noopener">Visit website →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Sales &amp; Distribution</div>
+              <h3>Jungent Latvia AS</h3>
+              <p>Sales and distribution of consumer goods in the Latvian market, carrying forward the group's core values and customer-centric approach.</p>
+              <a href="https://www.jungent.eu/en" class="card-link" target="_blank" rel="noopener">Visit website →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lv">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Food Industry</div>
+              <h3>Balt-Hellin SIA</h3>
+              <p>The Latvian food industry entity, supplying quality food products and solutions to food professionals and the food industry in Latvia.</p>
+              <a href="https://hellin.eu/" class="card-link" target="_blank" rel="noopener">Visit website →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lithuania -->
+      <div class="country-group">
+        <div class="country-header">
+          <div class="country-flag flag-lt"></div>
+          <h3>Lithuania</h3>
+          <span class="country-subtitle">Lietuva</span>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card" data-country="lt">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Sales &amp; Distribution</div>
+              <h3>Jungent Lietuva UAB</h3>
+              <p>Sales and distribution of consumer goods in Lithuania, representing leading global brands and maintaining an extensive network of partners and clients nationwide.</p>
+              <a href="https://www.jungent.eu/en" class="card-link" target="_blank" rel="noopener">Visit website →</a>
+            </div>
+          </div>
+          <div class="company-card" data-country="lt">
+            <div class="card-stripe"></div>
+            <div class="card-body">
+              <div class="card-sector">Logistics &amp; Freight</div>
+              <h3>Via 3L LT UAB</h3>
+              <p>The Lithuanian logistics unit supports group operations in the Lithuanian market, offering transport and forwarding solutions to local and international partners.</p>
+              <a href="https://via3l.eu/en/" class="card-link" target="_blank" rel="noopener">Visit website →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="values-en" class="values">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Values</div>
+        <h2>What We Stand For</h2>
+        <p>Our values are shaped by decades of experience, trusted relationships, and a commitment to responsible business ownership.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(43,149,208,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2B95D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Long-term Relationships</h3>
+          <p>An average employee tenure of over 10 years reflects our commitment to creating stable, trustworthy working environments. The same principle applies to all our client and partner relationships.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(139,32,53,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8B2035" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Baltic Expertise</h3>
+          <p>Operating across three countries, we understand the Baltic business environment thoroughly. Our local teams bring deep market knowledge and cultural understanding to every engagement.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(26,107,60,0.15)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A6B3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Family Ownership</h3>
+          <p>Owner-led governance ensures a long-term perspective over short-term gains. We are accountable to our employees, clients, partners, and communities in all three Baltic states.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-en" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Contact</div>
+        <h2>Get in Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h3>JNG Investments OÜ</h3>
+          <div class="contact-detail">
+            <strong>Registration</strong>
+            <span>10067264 — Estonian Business Register</span>
+          </div>
+          <div class="contact-detail">
+            <strong>VAT</strong>
+            <span>EE100288418</span>
+          </div>
+          <div class="contact-detail">
+            <strong>Phone</strong>
+            <a href="tel:+3276663800">+327 666 3800</a>
+          </div>
+          <div class="contact-detail">
+            <strong>Email</strong>
+            <a href="mailto:info@jng.investments">info@jng.investments</a>
+          </div>
+          <div class="contact-detail">
+            <strong>Website</strong>
+            <a href="https://jng.investments">jng.investments</a>
+          </div>
+          <div class="contact-detail">
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/company/jng-investments-ltd/" target="_blank" rel="noopener">JNG Investments OÜ</a>
+          </div>
+          <div class="contact-detail">
+            <strong>Address</strong>
+            <span>Paldiski mnt 11, 3rd floor<br>Kesklinna linnaosa, 10137 Tallinn</span>
+          </div>
+        </div>
+        <div>
+          <p class="section-label" style="margin-bottom:20px">Baltic Presence</p>
+          <div class="presence-grid">
+            <div class="presence-item">
+              <div class="presence-flag flag-ee"></div>
+              <strong>Estonia</strong>
+              <span>Tallinn</span>
+            </div>
+            <div class="presence-item">
+              <div class="presence-flag flag-lv"></div>
+              <strong>Latvia</strong>
+              <span>Riga</span>
+            </div>
+            <div class="presence-item">
+              <div class="presence-flag flag-lt"></div>
+              <strong>Lithuania</strong>
+              <span>Vilnius</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <div id="gmap-en"></div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /lang-en -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER (shared)
+════════════════════════════════════════════════════════ -->
+<div class="baltic-strip"></div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="JNG_logo.webp" alt="JNG" class="footer-logo">
+      <span class="footer-name">JNG Investments OÜ</span>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:info@jng.investments">info@jng.investments</a>
+      <a href="https://jng.investments">jng.investments</a>
+    </div>
+    <p class="footer-copy" id="footerCopy">© 2025 JNG Investments OÜ</p>
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════════════════ -->
+<script>
+  /* ── Language switching ── */
+  const navTranslations = {
+    et: { nav_about: 'Meist', nav_portfolio: 'Ettevõtted', nav_values: 'Väärtused', nav_contact: 'Kontakt' },
+    lv: { nav_about: 'Par mums', nav_portfolio: 'Uzņēmumi', nav_values: 'Vērtības', nav_contact: 'Kontakti' },
+    lt: { nav_about: 'Apie mus', nav_portfolio: 'Įmonės', nav_values: 'Vertybės', nav_contact: 'Kontaktai' },
+    en: { nav_about: 'About', nav_portfolio: 'Companies', nav_values: 'Values', nav_contact: 'Contact' }
+  };
+
+  function setLang(lang) {
+    // Show/hide content sections
+    document.querySelectorAll('.lang-content').forEach(el => {
+      el.hidden = el.dataset.lang !== lang;
+    });
+    // Update active button
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+    // Update nav link text and hrefs
+    const t = navTranslations[lang];
+    const suffix = lang === 'et' ? '' : '-' + lang;
+    document.querySelectorAll('[data-key]').forEach(el => {
+      if (t[el.dataset.key]) el.textContent = t[el.dataset.key];
+    });
+    document.querySelectorAll('[data-section]').forEach(el => {
+      el.href = '#' + el.dataset.section + suffix;
+    });
+    // Update html lang attribute
+    document.documentElement.lang = lang;
+    // Store preference
+    try { localStorage.setItem('jng-lang', lang); } catch(e) {}
+    // Resize map for the newly visible language section
+    if (typeof google !== 'undefined' && typeof JNG_MAPS !== 'undefined' && JNG_MAPS[lang]) {
+      google.maps.event.trigger(JNG_MAPS[lang], 'resize');
+      JNG_MAPS[lang].setCenter(JNG_COORDS);
+    }
+    // Scroll to top on language switch
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  /* ── Restore language preference ── */
+  (function() {
+    try {
+      const saved = localStorage.getItem('jng-lang');
+      const valid = ['et', 'lv', 'lt', 'en'];
+      if (saved && valid.includes(saved)) setLang(saved);
+    } catch(e) {}
+  })();
+
+  /* ── Mobile menu ── */
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+
+  /* ── Navbar scroll effect ── */
+  window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    navbar.style.boxShadow = window.scrollY > 20
+      ? '0 4px 24px rgba(0,0,0,0.3)'
+      : 'none';
+  }, { passive: true });
+
+  /* ── Smooth scroll for anchor links ── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 80;
+        window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+      }
+    });
+  });
+
+  /* ── Footer year ── */
+  document.getElementById('footerCopy').textContent =
+    '© ' + new Date().getFullYear() + ' JNG Investments OÜ';
+</script>
+
+<script>
+/* ── Google Maps – custom JNG marker (AdvancedMarkerElement) ── */
+const JNG_COORDS = { lat: 59.43543, lng: 24.74571 };
+const JNG_MAPS = {};
+
+async function initJNGMaps() {
+  const { Map } = await google.maps.importLibrary('maps');
+  const { AdvancedMarkerElement } = await google.maps.importLibrary('marker');
+
+  const INFO_HTML =
+    '<div style="font-family:Inter,sans-serif;padding:6px 4px;min-width:200px">' +
+    '<strong style="font-size:0.9rem">JNG Investments OÜ</strong><br>' +
+    '<span style="font-size:0.82rem;color:#555">Paldiski mnt 11, 3. korrus<br>10137 Tallinn, Eesti</span>' +
+    '</div>';
+
+  for (const lang of ['et','lv','lt','en']) {
+    const el = document.getElementById('gmap-' + lang);
+    if (!el) continue;
+
+    const map = new Map(el, {
+      center: JNG_COORDS,
+      zoom: 16,
+      mapId: 'DEMO_MAP_ID',
+      mapTypeControl: false,
+      streetViewControl: false,
+      fullscreenControl: true
+    });
+    JNG_MAPS[lang] = map;
+
+    const pin = document.createElement('img');
+    pin.src = 'favicon.svg';
+    pin.style.cssText = 'width:44px;height:44px;display:block;cursor:pointer';
+
+    const marker = new AdvancedMarkerElement({
+      position: JNG_COORDS,
+      map,
+      title: 'JNG Investments OÜ',
+      content: pin
+    });
+
+    const infoWindow = new google.maps.InfoWindow({ content: INFO_HTML });
+    infoWindow.open(map, marker);
+    marker.addListener('click', () => infoWindow.open(map, marker));
+  }
+}
+
+(g => {
+  var h,a,k,p='The Google Maps JavaScript API',c='google',l='importLibrary',q='__ib__',m=document,b=window;
+  b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,
+  u=()=>h||(h=new Promise(async(f,n)=>{await(a=m.createElement('script'));
+  e.set('libraries',[...r]+'');for(k in g)e.set(k.replace(/[A-Z]/g,t=>'_'+t[0].toLowerCase()),g[k]);
+  e.set('callback',c+'.maps.'+q);a.src='https://maps.'+c+'apis.com/maps/api/js?'+e;
+  a.onerror=()=>n(Error(p+' could not load.'));
+  a.nonce=m.querySelector('script[nonce]')?.nonce||'';m.head.append(a);d[q]=f}));
+  d[l]?console.warn(p+' only loads once. Ignoring:',g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n));
+})({ key: 'AIzaSyC0qzcKXEy458TzP6qzDvXhGJ2KA3QOmxc', v: 'weekly', callback: 'initJNGMaps' });
+</script>
+
+</body>
+</html>
