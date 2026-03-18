@@ -1598,7 +1598,7 @@
 
 <script>
 /* ── Google Maps – custom JNG marker (AdvancedMarkerElement) ── */
-const JNG_COORDS = { lat: 59.43543, lng: 24.74571 };
+const JNG_COORDS = { lat: 59.434747, lng: 24.729117 };
 const JNG_MAPS = {};
 
 async function initJNGMaps() {
@@ -1638,7 +1638,7 @@ async function initJNGMaps() {
 
     const infoWindow = new google.maps.InfoWindow({ content: INFO_HTML });
     infoWindow.open(map, marker);
-    marker.addListener('click', () => infoWindow.open(map, marker));
+    marker.addListener('gmp-click', () => infoWindow.open(map, marker));
   }
 }
 
@@ -1651,7 +1651,8 @@ async function initJNGMaps() {
   a.onerror=()=>n(Error(p+' could not load.'));
   a.nonce=m.querySelector('script[nonce]')?.nonce||'';m.head.append(a);d[q]=f}));
   d[l]?console.warn(p+' only loads once. Ignoring:',g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n));
-})({ key: 'AIzaSyC0qzcKXEy458TzP6qzDvXhGJ2KA3QOmxc', v: 'weekly', callback: 'initJNGMaps' });
+})({ key: 'AIzaSyC0qzcKXEy458TzP6qzDvXhGJ2KA3QOmxc', v: 'weekly' });
+initJNGMaps();
 </script>
 
 </body>
