@@ -1093,27 +1093,41 @@ h3 { font-size: 1.2rem; }
   place-items: center;
 }
 .mgmt-ceo-card {
-  background: var(--white);
-  border: 1px solid var(--border);
+  background: #1E3A7F;
   border-radius: var(--r-lg);
-  padding: 28px 32px;
-  box-shadow: var(--shadow-sm);
+  padding: 22px 40px;
   text-align: center;
   width: 100%;
   max-width: 780px;
 }
 .mgmt-ceo-title {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--text-light);
-  margin-bottom: 10px;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 6px;
 }
 .mgmt-ceo-name {
   font-family: var(--font-head);
-  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
-  color: var(--dark);
+  font-size: clamp(1.3rem, 2vw, 1.9rem);
+  color: #fff;
+}
+.mgmt-steering-label {
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.mgmt-support-func {
+  border-top-color: #8a9bb5;
 }
 .mgmt-support {
   display: grid;
@@ -1128,22 +1142,7 @@ h3 { font-size: 1.2rem; }
   box-shadow: var(--shadow-sm);
   padding: 24px 22px;
 }
-.mgmt-support-card h3 {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-light);
-  margin-bottom: 6px;
-}
-.mgmt-support-card p {
-  margin: 0;
-  font-family: var(--font-head);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--dark);
-  line-height: 1.4;
-}
+.mgmt-support-card { display: none; }
 .mgmt-beneficiaries { text-align: center; }
 .beneficiaries-img {
   width: 100%;
