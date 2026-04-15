@@ -1,0 +1,21 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: jng.jungent.eu
+          username: jng.jungent.eu
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /jng/
+          security: loose
