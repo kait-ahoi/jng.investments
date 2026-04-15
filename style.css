@@ -1097,30 +1097,11 @@ h3 { font-size: 1.2rem; }
 }
 .mgmt-ceo {
   margin: 40px 0 24px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
 }
-.mgmt-ceo-card {
-  background: #1E3A7F;
-  border-radius: var(--r-lg);
-  padding: 22px 40px;
-  text-align: center;
-  width: 100%;
-  max-width: 780px;
-}
-.mgmt-ceo-title {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.65);
-  margin-bottom: 6px;
-}
-.mgmt-ceo-name {
-  font-family: var(--font-head);
-  font-size: clamp(1.3rem, 2vw, 1.9rem);
-  color: #fff;
-}
+.mgmt-ceo .mgmt-func-wrap { max-width: 220px; }
+.mgmt-ceo-func { border-top-color: #C4922A; }
 .mgmt-steering-label {
   border: 1.5px solid var(--border);
   border-radius: var(--r-lg);
