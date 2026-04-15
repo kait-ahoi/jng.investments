@@ -1096,24 +1096,24 @@ h3 { font-size: 1.2rem; }
   line-height: 1.5;
 }
 .mgmt-ceo {
-  margin: 40px 0 24px;
-  display: flex;
-  justify-content: center;
-}
-.mgmt-ceo .mgmt-func-wrap { max-width: 220px; }
-.mgmt-ceo-func { border-top-color: #C4922A; }
-.mgmt-steering-label {
-  border: 1.5px solid var(--border);
-  border-radius: var(--r-lg);
-  padding: 12px 24px;
+  margin: 48px 0 6px;
   text-align: center;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+}
+.mgmt-h2 {
+  font-family: var(--font-head);
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+.mgmt-ceo-name-line {
+  font-size: 1rem;
   color: var(--text-mid);
+  margin-bottom: 48px;
+}
+.mgmt-steering-label {
+  text-align: center;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 0;
 }
 .mgmt-support-func {
   border-top-color: #8a9bb5;
