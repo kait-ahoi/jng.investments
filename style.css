@@ -1018,6 +1018,11 @@ h3 { font-size: 1.2rem; }
   border-radius: var(--r-lg);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+.mgmt-area-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 .mgmt-area-header {
   display: flex;
@@ -1025,8 +1030,8 @@ h3 { font-size: 1.2rem; }
   justify-content: space-between;
   padding: 18px 24px;
 }
-.mgmt-area-sales .mgmt-area-header { background: #1E3A7F; }
-.mgmt-area-logistics .mgmt-area-header { background: #2BA8A0; }
+.mgmt-area-sales .mgmt-area-header { background: linear-gradient(135deg, #1E3A7F 0%, #2a4fa8 100%); }
+.mgmt-area-logistics .mgmt-area-header { background: linear-gradient(135deg, #2BA8A0 0%, #1d8f87 100%); }
 .mgmt-area-title {
   font-size: 0.8rem;
   font-weight: 700;
@@ -1055,8 +1060,10 @@ h3 { font-size: 1.2rem; }
   gap: 14px;
   padding: 12px 24px;
   border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
 }
 .mgmt-area-list li:last-child { border-bottom: none; }
+.mgmt-area-list li:hover { background: rgba(0,0,0,0.02); }
 .mgmt-area-abbr {
   flex-shrink: 0;
   width: 44px;
@@ -1070,6 +1077,7 @@ h3 { font-size: 1.2rem; }
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.06em;
+  box-shadow: inset 0 0 0 1px rgba(30, 58, 127, 0.15);
 }
 .mgmt-area-abbr--teal {
   background: rgba(43, 168, 160, 0.1);
