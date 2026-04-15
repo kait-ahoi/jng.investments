@@ -7,21 +7,13 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup SSH key
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-          mkdir -p ~/.ssh
-          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -H jungent-eu.vserver.zonevs.eu >> ~/.ssh/known_hosts 2>/dev/null
-
-      - name: Deploy via rsync
+      - name: Deploy files
         run: |
           rsync -avz --delete \
             --exclude='.git*' \
-            ./ virt53324@jungent-eu.vserver.zonevs.eu:/data01/virt53324/domeenid/www.jungent.eu/jng/
+            --exclude='_work' \
+            $GITHUB_WORKSPACE/ /data01/virt53324/domeenid/www.jungent.eu/jng/
