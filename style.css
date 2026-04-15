@@ -88,7 +88,7 @@ h1, h2, h3, h4 {
   font-weight: 700;
   color: var(--text);
 }
-h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); text-decoration: none; }
 h3 { font-size: 1.2rem; }
 
 /* ─── Buttons ────────────────────────────────────────────── */
@@ -1059,42 +1059,29 @@ h3 { font-size: 1.2rem; }
   border-radius: var(--r-lg);
   box-shadow: var(--shadow-sm);
 }
-.mgmt-area-companies li {
+.mgmt-area-companies > li {
   list-style: none;
+  display: block;
   padding: 12px 20px;
   border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
 }
-.mgmt-area-companies li:last-child { border-bottom: none; }
-.mgmt-area-companies li strong {
+.mgmt-area-companies > li:last-child { border-bottom: none; }
+.mgmt-area-companies > li:hover { background: rgba(0,0,0,0.02); }
+.mgmt-area-companies > li::before { display: none; }
+.mgmt-area-companies > li::marker { content: none; }
+.mgmt-area-companies > li strong {
   display: block;
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--dark);
 }
-.mgmt-area-companies li p {
+.mgmt-area-companies > li p {
   margin: 2px 0 0;
   font-size: 0.82rem;
   color: var(--text-mid);
   line-height: 1.5;
 }
-.mgmt-area-list {
-  list-style: none;
-  padding: 12px 0;
-  margin: 0;
-}
-.mgmt-area-companies li,
-.mgmt-area-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 12px 24px;
-  border-bottom: 1px solid var(--border);
-  transition: background var(--transition);
-}
-.mgmt-area-companies li:last-child,
-.mgmt-area-list li:last-child { border-bottom: none; }
-.mgmt-area-companies li:hover,
-.mgmt-area-list li:hover { background: rgba(0,0,0,0.02); }
 .mgmt-area-abbr {
   flex-shrink: 0;
   width: 44px;
@@ -1127,9 +1114,11 @@ h3 { font-size: 1.2rem; }
   line-height: 1.5;
 }
 .mgmt-ceo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  max-width: 680px;
-  margin: 48px auto 0;
+  margin: 48px 0 0;
 }
 .mgmt-h2 {
   font-family: var(--font-head);
@@ -1138,6 +1127,7 @@ h3 { font-size: 1.2rem; }
   margin-top: 8px;
   margin-bottom: 6px;
   text-align: center;
+  width: 100%;
 }
 .mgmt-ceo-name-line {
   font-size: 1rem;
@@ -1145,9 +1135,11 @@ h3 { font-size: 1.2rem; }
   margin-bottom: 48px;
 }
 .mgmt-steering-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  max-width: 680px;
-  margin: 40px auto 20px;
+  margin: 40px 0 20px;
 }
 .mgmt-support-func {
   border-top-color: #8a9bb5;
