@@ -1049,11 +1049,22 @@ h3 { font-size: 1.2rem; }
   border-radius: 4px;
   padding: 3px 8px;
 }
+.mgmt-area-companies {
+  list-style: none;
+  padding: 8px 0;
+  margin: 8px 0 0;
+  width: 100%;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+}
 .mgmt-area-list {
   list-style: none;
   padding: 12px 0;
   margin: 0;
 }
+.mgmt-area-companies li,
 .mgmt-area-list li {
   display: flex;
   align-items: flex-start;
@@ -1062,7 +1073,9 @@ h3 { font-size: 1.2rem; }
   border-bottom: 1px solid var(--border);
   transition: background var(--transition);
 }
+.mgmt-area-companies li:last-child,
 .mgmt-area-list li:last-child { border-bottom: none; }
+.mgmt-area-companies li:hover,
 .mgmt-area-list li:hover { background: rgba(0,0,0,0.02); }
 .mgmt-area-abbr {
   flex-shrink: 0;
