@@ -1,4 +1,4 @@
-name: Deploy to FTP
+name: Deploy to server
 
 on:
   push:
@@ -11,11 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: jng.jungent.eu
-          username: jng.jungent.eu
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /jng/
-          security: loose
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H jungent-eu.vserver.zonevs.eu >> ~/.ssh/known_hosts
+
+      - name: Deploy via rsync
+        run: |
+          rsync -avz --delete \
+            --exclude='.git*' \
+            ./ virt53324@jungent-eu.vserver.zonevs.eu:/data01/virt53324/domeenid/www.jungent.eu/jng/
