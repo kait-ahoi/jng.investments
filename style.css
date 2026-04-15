@@ -1051,13 +1051,16 @@ h3 { font-size: 1.2rem; }
 }
 .mgmt-area-companies {
   list-style: none;
-  padding: 8px 0;
+  padding: 8px 0 8px 0;
   margin: 8px 0 0;
   width: 100%;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
   box-shadow: var(--shadow-sm);
+}
+.mgmt-area-companies li {
+  list-style: none;
 }
 .mgmt-area-list {
   list-style: none;
@@ -1117,6 +1120,7 @@ h3 { font-size: 1.2rem; }
   font-size: clamp(1.4rem, 2.2vw, 2rem);
   color: var(--dark);
   margin-bottom: 6px;
+  text-align: center;
 }
 .mgmt-ceo-name-line {
   font-size: 1rem;
