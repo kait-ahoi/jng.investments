@@ -953,6 +953,12 @@ h3 { font-size: 1.2rem; }
   .lang-switcher { padding: 3px; }
   .lang-btn { padding: 5px 9px; font-size: 0.75rem; }
   .nav-name { font-size: 0.9rem; }
+
+  /* Owners / management cards: tighten the 2-column grid on phones */
+  .mgmt-functions { gap: 12px; margin-bottom: 40px; }
+  .mgmt-func-card { padding: 22px 12px; border-radius: var(--r); }
+  .mgmt-func-role { font-size: 0.92rem; line-height: 1.3; }
+  .mgmt-func-name { margin-top: 8px; font-size: 0.78rem; }
 }
 
 /* ─── Management ─────────────────────────────────────────── */
